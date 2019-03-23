@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <input type="text" placeholder="请输入想查找的商品" id = "text">
+    <input type="button" value="添加" onclick="save('text');" />
+    <input type="button" value="全部清除" onclick="clearStorage();" />
+    <br/>
+    <p id = "msg"></p>
+</body>
+<script type="text/javascript">
+    function save(id) {
+        var data = document.getElementById(id).value;
+        var time = new Date().getTime();
+        localStorage.setItem(time, data);
+        alert("数据已保存。");
+        load('msg');
+    }
+
+    function load() {
+        var str1 = a();
+        msg.innerHTML = "";
+        for (var i = 0; i < str1.length; i++) {
+            var button = document.createElement("button");
+            button.innerHTML=str1[i];
+            msg.appendChild(button);
+
+        }
+    }
+    function a(){
+        var str1 = [];
+        for(var i = 0;i<localStorage.length;i++){
+            var key = localStorage.key(i);
+            var value = localStorage.getItem(key);
+            if(str1.indexOf(value)<0){
+                str1.push(value);
+        }
+    }
+    console.log(str1);
+    return str1;
+}
+    function clearStorage() {
+        localStorage.clear();
+        alert("全部数据被清除。");
+        time();
+    }
+    function time() {
+        msg.innerHTML = "";
+    }
+</script>
+
+</html>
