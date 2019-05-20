@@ -88,10 +88,6 @@
 #div1:hover #jiajie{
     transform: scale(1,1);
 }
-#div1:hover #tail{
-    margin-top: 20px;
-    
-}
 #div1:hover #img{
     opacity: 0.5;
     transform: scale(1,1.2);
