@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+}
+#div1{
+    width: 400px;
+    position:relative;
+}
+#font{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 350px;
+}
+#p1{
+    background: rgba(248, 123, 6, 0.911);
+    margin-top: 328px;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 2px;
+    width: 50px;
+    height: 20px;
+}
+#circle{
+    position:absolute;
+    top: 20px;
+    left: 300px;
+    width: 50px;      
+    height: 50px;      
+    background: rgba(248, 123, 6, 0.911); 
+    border-radius: 50%;      
+    
+}
+#p3{
+    color: white;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+#p2{
+    color: white;
+    font-size: 16px;
+    padding-left: 10px;
+}
+#qingdao{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 15px;
+    
+}
+#jingdian{
+    color:rgba(248, 123, 6, 0.911);
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#jiajie{
+    width: 400px;
+    color:gray;
+    font-weight: normal;
+    font-size: 17px;
+    margin-left: 15px;
+    transform: scale(0,0);
+}
+#tail{
+    position:absolute;
+    top: 450px;
+    left: 30px;
+    color: gainsboro;
+}
+#div2{
+    background: white;
+    position:absolute;
+    top: 350px;
+}
+#div1:hover #div2{
+    background: white;
+    top: 200px;
+}
+#div1:hover #p1{
+    margin-top: 180px;
+}
+
+#div1:hover #jiajie{
+    transform: scale(1,1);
+}
+#div1:hover #tail{
+    margin-top: 20px;
+    
+}
+#div1:hover #img{
+    opacity: 0.5;
+    transform: scale(1,1.2);
+}
