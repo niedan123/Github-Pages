@@ -78,17 +78,21 @@
     top: 350px;
 }
 #div1:hover #div2{
+    transition: 0.5s linear;
     background: white;
     top: 200px;
 }
 #div1:hover #p1{
+    transition: 0.5s linear;
     margin-top: 180px;
 }
 
 #div1:hover #jiajie{
+    transition: 0.1s ease-in-out;
     transform: scale(1,1);
 }
 #div1:hover #img{
+    transition: 0.5s linear;
     opacity: 0.5;
     transform: scale(1,1.2);
 }
